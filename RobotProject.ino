@@ -1,4 +1,5 @@
 #include "Arduino.h"
+#include "CRobot.h"
 //The setup function is called once at startup of the sketch
 void setup()
 {
