@@ -15,11 +15,11 @@ We can use this to leave notes if needed.
 - [ ] Objective 2 implemented in main
 
 #### Ideas
-- **While** (doesn't see black)
--   fwduntil
--     (stop)
--   **otherwise**
--     **if** (see black)
--       turn teeny bit
--       go forward teeny bit
--       loop until doesnt see black, then back to the first **while** loop
+ **While** (doesn't see black) <br>  
+   fwduntil <br>  
+     (stop) <br>  
+   **otherwise** <br>  
+     **if** (see black) <br>  
+       turn teeny bit
+       go forward teeny bit
+       loop until doesnt see black, then back to the first **while** loop
