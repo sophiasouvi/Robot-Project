@@ -16,6 +16,10 @@ public:
 	{
 		name1 = a;
 		name2 = b;
+		Lcd.locate(0,0);
+		Lcd.print(name1);
+		Lcd.locate(1,0);
+		Lcd.print(name2);
 		fwd0 = c;
 		fwd1 = d;
 
@@ -54,6 +58,18 @@ public:
 		EmoroServo.write(SERVO_0, fwd0);
 		EmoroServo.write(SERVO_1, fwd1);
 	}
+	void aboutFace()
+	{
+		Gyr.resetDegrees();
+		EmoroServo.write(SERVO_0,1400);
+		EmoroServo.write(SERVO_1, 1400);
+			while (Gyr.readDegreesZ() < 180 )
+				{
+					delay(100);
+				}
+		EmoroServo.write(SERVO_0, fwd0);
+		EmoroServo.write(SERVO_1, fwd1);
+		}
 };
 
 
