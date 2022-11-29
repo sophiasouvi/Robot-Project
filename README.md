@@ -16,10 +16,9 @@ We can use this to leave notes if needed.
 
 #### Ideas
  **While** (doesn't see black) <br>  
-   fwduntil <br>  
-     (stop) <br>  
-   **otherwise** <br>  
-     **if** (see black) <br>  
-       turn teeny bit
-       go forward teeny bit
-       loop until doesnt see black, then back to the first **while** loop
+fwduntil -> (stop) <br>  
+**otherwise** <br>  
+**if** (see black) <br>  
+- turn teeny bit
+- go forward teeny bit
+- loop until doesnt see black, then back to the first **while** loop
