@@ -13,3 +13,13 @@ We can use this to leave notes if needed.
 - [ ] Objective one implemented in main
 - [ ] Objective 2 programmed in class
 - [ ] Objective 2 implemented in main
+
+#### Ideas
+**While** (doesn't see black)
+  fwduntil
+    (stop)
+  **otherwise**
+    **if** (see black)
+      turn teeny bit
+      go forward teeny bit
+      loop until doesnt see black, then back to the first **while** loop
