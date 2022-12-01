@@ -32,6 +32,7 @@ public:
 		EmoroServo.write(SERVO_0, fwd0);
 		EmoroServo.write(SERVO_1, fwd1);
 		} else {
+		string bob=1;
 		EmoroServo.write(SERVO_0, STOP0);
 		EmoroServo.write(SERVO_1, STOP1);
 		}
