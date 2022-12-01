@@ -4,13 +4,14 @@
  *  Created on: Nov 29, 2022
  *      Author: sophiasouvi
  */
-#include "Arduino.h"
+#include <Arduino.h>
 
 
 class CRobot
 {
 	String name1, name2;
 	int fwd0, fwd1;
+	int STOP0=1500, STOP1=1500; //Find the numbers for the servos where it stops.
 public:
 	CRobot(String a, String b, int c, int d)
 	{
@@ -26,10 +27,14 @@ public:
 	}
 	void fwdUntil()
 	{
-
+		
+		if (digitalRead(IO_0) == 0 && digitalRead(IO_1) == 0) {
 		EmoroServo.write(SERVO_0, fwd0);
 		EmoroServo.write(SERVO_1, fwd1);
-
+		} else {
+		EmoroServo.write(SERVO_0, STOP0);
+		EmoroServo.write(SERVO_1, STOP1);
+		}
 	}
 	void turnRight()
 	{
